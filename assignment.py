@@ -1,8 +1,12 @@
 #!python3
 """
 Tic Tac Toe
-Create a tic tac toe game that is enclosed entirely within a function.  The basic shell has been created, as well as the main block that will be used to execute the class method that runs the game.
+Create a tic tac toe game that is enclosed entirely within a class instances.  The basic shell has been created, as well as the main block that will be used to execute the class method that runs the game.
+This Tic Tac Toe game will be between 2 human players taking turns at the keyboard.
 You need to create the methods and class variables that you will use.
+There should be no code added outside of the class template definition.
+The class property "moves" has been included.  This is a dictionary that will contain data that could be used in future machine learning applications to create a smart computer player. All moves will be recorded in order and then the winner will be recorded at the end of the game as either 0 (first player), 1 (second player) or -1 (if a tie)
+
 
 One idea would be to create a board like so:
 
@@ -25,9 +29,18 @@ To enhance your display, you can access unicode symbols
 """
 
 class tictactoe:
+    # class variables 
+    record = {
+        'winner' : None,
+        'moves' : []
+    }
 
-    @classmethod
-    def run(cls):
+
+    # class methods
+    def run(self):
         pass
 
-tictactoe.run()
+    def __init__(self):
+        self.run()
+
+game = tictactoe()
