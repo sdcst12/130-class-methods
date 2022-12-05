@@ -47,3 +47,7 @@ Although we have done this before, we will be creating a version of tic-tac-toe 
 
 ** Bonus
 Interested in improving the appearance of your program? Consider the use of ANSI code.
+Even more challenging is the use of Curses module:
+https://pypi.org/project/windows-curses/
+https://docs.python.org/3/howto/curses.html
+
